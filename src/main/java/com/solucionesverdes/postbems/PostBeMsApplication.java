@@ -9,5 +9,4 @@ public class PostBeMsApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PostBeMsApplication.class, args);
 	}
-
 }
