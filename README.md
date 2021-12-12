@@ -12,3 +12,6 @@ Busqueda filtrada:
 - GET: Buscar Posts por Area.
 - GET: Buscar Posts por Ciudad.
 - GET: Buscar Posts por Precio.
+
+Swagger API Documentation:
+- https://soluciones-verdes-posts-ms.herokuapp.com/swagger-ui.html
