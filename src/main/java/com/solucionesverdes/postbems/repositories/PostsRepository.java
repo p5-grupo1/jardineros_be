@@ -8,7 +8,6 @@ public interface PostsRepository extends MongoRepository<Posts, String> {
     List<Posts> findByPrecio(Integer precio);
     List<Posts> findByArea(String area);
     List<Posts> findByCiudad(String ciudad);
-
 }
 
 
