@@ -1,7 +1,6 @@
 package com.solucionesverdes.postbems.models;
-import org.bson.types.Binary;
 import org.springframework.data.annotation.Id;
-import  com.solucionesverdes.postbems.models.images;
+
 import java.util.Date;
 
 public class Posts {
@@ -9,17 +8,18 @@ public class Posts {
         private String  idPost;
         private String  username;
         private String  descripcionServicio;
-        private images image = new images();
+        private String  imagen;
         private String  ciudad;
         private Integer precio;
         private String  area;
         private Date fechaPublicacion;
 
-        public Posts(String idPost, String username, String descripcionServicio, String ciudad,
+        public Posts(String idPost, String username, String descripcionServicio,String imagen, String ciudad,
                      Integer precio, String area, Date fechaPublicacion){
             this.idPost = idPost;
             this.username = username;
             this.descripcionServicio = descripcionServicio;
+            this.imagen = imagen;
             this.ciudad = ciudad;
             this.precio =precio;
             this.area = area;
@@ -28,10 +28,6 @@ public class Posts {
 
     public String getIdPost() {
         return idPost;
-    }
-
-    public void setIdPost(String idPost) {
-        this.idPost = idPost;
     }
 
     public  String getUsername(){ return  username; }
@@ -44,6 +40,14 @@ public class Posts {
 
     public void setDescripcionServicio(String descripcionServicio) {
         this.descripcionServicio = descripcionServicio;
+    }
+
+    public String getImagen(){
+            return  imagen;
+    }
+
+    public void setImagen (String imagen){
+            this.imagen = imagen;
     }
 
     public String getCiudad() {
